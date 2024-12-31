@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <style>
+               #package{
+                    height: 100%;
+                    font-family: Arial, Helvetica, sans-serif;
+                    box-sizing: border-box;
+               }
+               #package .bg-img {
+                    /* The image used */
+                    background-image: url("images/mn1.jpg");
+                    min-height: 680px;
+
+                    /* Center and scale the image nicely */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+               }
+
+               /* Add styles to the form container */
+               #package .container {
+                    position:absolute;
+                    left: 40%;
+                    top: 10%;
+                    margin: 20px;
+                    max-width: 60%;
+                    padding: 20px;
+                    background-color: white;
+                    }
+
+               /* Full-width input fields */
+               #package input[type=text], #package input[type=password] {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 5px 0 22px 0;
+                    border: none;
+                    background: #f1f1f1;
+               }
+               #package input[type=date]{
+                    width: 40%;
+                    padding: 2px;
+               }
+               #package input[type=text]:focus,#package input[type=password]:focus {
+                    background-color: #eee;
+                    outline: none;
+               }
+
+               /* Set a style for the submit button */
+               #package .btn {
+                    background-color: #4885ed;
+                    color: white;
+                    font-size:14px;
+                    padding: 5px;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%;
+                    opacity: 0.9;
+               }
+
+               #package .btn:hover {
+                    opacity: 1;
+               }
+               #package .btn2 {
+                    background-color: #4885ed;
+                    color: white;
+                    font-size:14px;
+                    padding: 5px;
+                    border: none;
+                    cursor: pointer;
+                    width: 70%;
+                    opacity: 0.8;
+                    border-radius: 8px;
+               }
+
+               #package .btn2:hover {
+                    opacity: 1;
+               }
+
+               #package div.boxgrp{
+                    display: flex;
+                    flex-wrap: nowrap;
+               }
+               #package h1.heads{
+                    text-align: center;
+                    padding: 10px;
+               }
+               #package div.box {
+                    width: 25%;
+                    background-color: white;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    margin: 15px;
+               }
+
+               #package div.txtcontainer {
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 3px 5px;
+               }    
+          </style>
+     </head>
+     <body>
+          <script>
+               function showCuisine() {
+               var x = document.getElementById("Cuisine");
+               if (x.style.display === "none") {
+                    x.style.display = "block";
+               } else {
+                         x.style.display = "none";
+                    }
+               }
+               function showArts() {
+                    var x = document.getElementById("Arts");
+                    if (x.style.display === "none") {
+                         x.style.display = "block";
+                    } else {
+                              x.style.display = "none";
+                         }
+               }
+
+          </script>
+		<div id="package">
+			<div class="bg-img">
+				<form action="" class="container">
+					name:<input type="text">
+					travelDate:<br>from:<input type="date">  to:<input type="date"><br><br>
+					hotel:<button type="button">3<img src="images/star.png" width="15%"></button>
+					<button type="button">4<img src="images/star.png" width="15%"></button>
+					<button type="button">5<img src="images/star.png" width="15%"></button><br><br>
+					Flight:&nbsp;&nbsp;yes<input type="radio" name="fl">&nbsp;&nbsp;&nbsp;no<input type="radio" name="fl">
+					<button type="submit" class="btn">Confirm</button>
+				</form>
+			</div>
+			<br>
+			<center>
+                    <button onclick="showCuisine()" class="btn2" >Cuisine</button>
+               </center><br>
+			<p id="Cuisine" style="display:none;">Rice is the staple diet, while fish is an integral component of coastal South Indian meals.Coconut and spices are used extensively in South Indian cuisine. The region has a rich cuisine involving both traditional non-vegetarian and vegetarian dishes comprising rice, legumes and lentils. Its distinct aroma and flavour is achieved by the blending of flavourings and spices including curry leaves, mustard seeds, coriander, ginger, garlic, chili, pepper, cinnamon, cloves, green cardamom, cumin, nutmeg, coconut and rosewater.The traditional way of eating a meal involves being seated on the floor, having the food served on a banana leaf. After the meal,the easily degradable banana leaf is discarded or becomes fodder for cattle.Idli, dosa, uthappam, appam, pongal and paniyaram are popular dishes for breakfast.Rice is served with sambar, rasam and poriyal for lunch.
+               </p><br>
+			<center>
+                    <button onclick="showArts()" class="btn2">Arts</button>
+               </center><br>
+			<div id="Arts" style="display:none;">
+				<h3>South Indian dance forms</h3><br>
+				Bharatanatyam (Tamil Nadu)<br>
+				Kathakali (Kerala)<br>
+				Kuchipudi (Andhra Pradesh)<br>
+				Yakshagana (Karnataka)<br>
+				South India is home to several distinct dance forms such as Bharatanatyam, Kathakali, Kerala Natanam, Koodiyattam, Kuchipudi, Margamkali, Mohiniaattam, Oppana, Ottamthullal, Theyyam, Vilasini Natyam and Yakshagana.
+			</div><br>
+			<h1>The destinations involved in package</h1>
+			<div class="boxgrp">
+				<div class="box">
+				     <img src="images/01-greece.jpg" alt="5 Terre" style="width:100%">
+			       	<div class="txtcontainer">
+				      	<p>Cinque Terre</p>
+	                    </div>
+			     </div>
+
+                    <div class="box">
+                         <img src="images/01-greece.jpg" alt="5 Terre" style="width:100%">
+                         <div class="txtcontainer">
+                              <p>Cinque Terre</p>
+                         </div>
+                    </div>
+
+                    <div class="box">
+                         <img src="images/01-greece.jpg" alt="5 Terre" style="width:100%">
+                         <div class="txtcontainer">
+                              <p>Cinque Terre</p>
+                         </div>
+                    </div>
+
+                    <div class="box">
+                         <img src="images/01-greece.jpg" alt="5 Terre" style="width:100%">
+                         <div class="txtcontainer">
+                              <p>Cinque Terre</p>
+                         </div>
+                    </div>
+	     	</div>
+          </div>
+	</body>
+</html>
